@@ -16,7 +16,7 @@ load_dotenv()
 # Engine configuration
 
 # API Keys
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
 assert OPENAI_API_KEY, "OPENAI_API_KEY environment variable is missing from .env"
 
 OPENAI_API_MODEL = os.getenv("OPENAI_API_MODEL", "gpt-3.5-turbo")
@@ -43,7 +43,7 @@ assert YOUR_TABLE_NAME, "TABLE_NAME environment variable is missing from .env"
 
 # Goal configuation
 OBJECTIVE = os.getenv("OBJECTIVE", "Crear calendario de contenidos en redes sociales para un mes para una agencia de marketing")
-INITIAL_TASK = os.getenv("INITIAL_TASK", os.getenv("FIRST_TASK", "Desarrollar el contenido"))
+INITIAL_TASK = os.getenv("INITIAL_TASK", os.getenv("FIRST_TASK", "Desarrollar el contenido del día 1"))
 
 
 # Extensions support begin
