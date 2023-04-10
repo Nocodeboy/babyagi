@@ -16,7 +16,7 @@ load_dotenv()
 # Engine configuration
 
 # API Keys
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
 assert OPENAI_API_KEY, "OPENAI_API_KEY environment variable is missing from .env"
 
 OPENAI_API_MODEL = os.getenv("OPENAI_API_MODEL", "gpt-3.5-turbo")
@@ -32,18 +32,18 @@ if "gpt-4" in OPENAI_API_MODEL.lower():
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "2a8c869e-40f7-4870-9039-74483f54fabe")
 assert PINECONE_API_KEY, "PINECONE_API_KEY environment variable is missing from .env"
 
-PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT", "")
+PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT", "eu-west1-gcp")
 assert (
     PINECONE_ENVIRONMENT
 ), "PINECONE_ENVIRONMENT environment variable is missing from .env"
 
 # Table config
-YOUR_TABLE_NAME = os.getenv("TABLE_NAME", "")
+YOUR_TABLE_NAME = os.getenv("TABLE_NAME", "test-table")
 assert YOUR_TABLE_NAME, "TABLE_NAME environment variable is missing from .env"
 
 # Goal configuation
-OBJECTIVE = os.getenv("OBJECTIVE", "")
-INITIAL_TASK = os.getenv("INITIAL_TASK", os.getenv("FIRST_TASK", ""))
+OBJECTIVE = os.getenv("OBJECTIVE", "Crear calendario de contenidos en redes sociales para un mes para una agencia de marketing")
+INITIAL_TASK = os.getenv("INITIAL_TASK", os.getenv("FIRST_TASK", "Desarrollar el contenido"))
 
 
 # Extensions support begin
