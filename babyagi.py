@@ -16,7 +16,7 @@ load_dotenv()
 # Engine configuration
 
 # API Keys
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
 assert OPENAI_API_KEY, "OPENAI_API_KEY environment variable is missing from .env"
 
 OPENAI_API_MODEL = os.getenv("OPENAI_API_MODEL", "gpt-3.5-turbo")
@@ -29,7 +29,7 @@ if "gpt-4" in OPENAI_API_MODEL.lower():
         + "\033[0m\033[0m"
     )
 
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "2a8c869e-40f7-4870-9039-74483f54fabe")
 assert PINECONE_API_KEY, "PINECONE_API_KEY environment variable is missing from .env"
 
 PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT", "")
